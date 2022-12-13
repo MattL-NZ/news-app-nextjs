@@ -1,10 +1,9 @@
 import { categories } from "../core/constants/constants";
-import { NewsResponse } from "../core/types/types";
 import fetchNews from "../core/services/newsService";
 
 export default async function HomePage() {
-  const news: NewsResponse = await fetchNews(categories.join(","));
-
+  const categoriesJoined = categories.join(",")
+  const news: NewsResponse = await fetchNews(categoriesJoined);
   return (
     <div>
       {/*  News List Component  */}
