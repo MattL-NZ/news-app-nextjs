@@ -21,7 +21,6 @@ type Root {
   pagination: Pagination
 }
 
-# noinspection GraphQLMissingType,GraphQLUnresolvedReference
 type Query {
   myQuery(
     access_key: String,

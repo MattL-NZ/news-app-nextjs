@@ -6,7 +6,7 @@ import sortNewsByImages from "../core/helpers/sortNewsByImages";
 
 export default async function HomePage() {
   const categoriesJoined = categories.join(",");
-  const news: NewsResponse = response || (await fetchNews(categoriesJoined));
+  const news: NewsResponse = await fetchNews(categoriesJoined);
   const newsFormatted = sortNewsByImages(news);
   return (
     <div>

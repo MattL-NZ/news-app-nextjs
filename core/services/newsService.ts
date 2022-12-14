@@ -17,6 +17,7 @@ export default async function fetchNews(
         access_key: $access_key
         categories: $categories
         countries: "gb"
+        sort: "published_desc"
         keywords: $keywords
       ) {
         data {
