@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Header from "../components/Header/Header";
+import Providers from "../components/Providers/Providers";
 
 export default function RootLayout({
   children,
@@ -9,8 +10,10 @@ export default function RootLayout({
   return (
     <html>
       <body className="bg-gray-100 dark:bg-zinc-900 transition-all duration-700">
-        <Header />
-        <div className="max-w-6xl mx-auto">{children}</div>
+        <Providers>
+          <Header />
+          <div className="max-w-6xl mx-auto">{children}</div>
+        </Providers>
       </body>
     </html>
   );

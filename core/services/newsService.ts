@@ -9,9 +9,9 @@ export default async function fetchNews(
   // Graph Query
   const query = gql`
     query MyQuery(
-        $access_key: String!,
-        $categories: String!,
-        $keywords: String,
+      $access_key: String!
+      $categories: String!
+      $keywords: String
     ) {
       myQuery(
         access_key: $access_key
@@ -41,6 +41,7 @@ export default async function fetchNews(
     }
   `;
   // Fetch function with Next.JS 13 caching...
+  console.log("HELLO");
   const res = await fetch(
     "https://nianzishan.stepzen.net/api/jittery-robin/__graphql",
     {
@@ -56,6 +57,7 @@ export default async function fetchNews(
         variables: {
           access_key: "1c4a389ba0086d2b8a11ece8efb17202",
           categories: category!.toString(),
+          keywords: keywords,
         },
       }),
     }
@@ -64,5 +66,3 @@ export default async function fetchNews(
   const newsResponse = await res.json();
   return sortNewsByImages(newsResponse.data.myQuery);
 }
-
-//stepzen import curl "http://api.mediastack.com/v1/news?access_key=1c4a389ba0086d2b8a11ece8efb17202&sources=business,sports"
