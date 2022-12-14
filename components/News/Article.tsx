@@ -1,20 +1,19 @@
-import React, { ReactNode } from "react";
-import Image from "next/image";
 import ReadMoreButton from "../Buttons/ReadMoreButton";
 import LiveTimestamp from "../LiveTimeStamp/LiveTimestamp";
+import Image from "next/image";
 
-type ArticleProps = {
+type ArticlePageProps = {
   article: Article;
 };
 
-export default function Article({ article }: ArticleProps) {
+export default function Article({ article }: ArticlePageProps) {
   return (
     <article
       className="bg-slate-100 dark:bg-slate-800 flex flex-col rounded-lg shadow-lg
     hover:scale-105 hover:shadow-xl hover:bg-slate-200 transition-all duration-200 ease-out"
     >
       {article.image && (
-        <img
+        <Image
           className="h-56 w-full object-cover rounded-t-lg shadow-md"
           src={article.image}
           alt={article.title}
