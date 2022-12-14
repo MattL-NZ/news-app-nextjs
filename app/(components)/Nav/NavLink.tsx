@@ -1,4 +1,4 @@
-import { NavLinkProps } from "../../core/types/componentTypes";
+import { NavLinkProps } from "../../../core/types/componentTypes";
 import Link from "next/link";
 
 export default function NavLink({ category, isActive }: NavLinkProps) {

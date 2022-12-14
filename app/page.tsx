@@ -1,6 +1,6 @@
 import { categories } from "../core/constants/constants";
 import fetchNews from "../core/services/newsService";
-import NewsList from "../components/News/NewsList";
+import NewsList from "./(components)/News/NewsList";
 import response from "../response.json";
 import sortNewsByImages from "../core/helpers/sortNewsByImages";
 

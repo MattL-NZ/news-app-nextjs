@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import LiveTimestamp from "../../components/LiveTimeStamp/LiveTimestamp";
+import LiveTimestamp from "../(components)/LiveTimeStamp/LiveTimestamp";
 import React from "react";
 
 type ArticlePageProps = {

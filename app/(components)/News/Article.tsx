@@ -1,6 +1,5 @@
 import ReadMoreButton from "../Buttons/ReadMoreButton";
 import LiveTimestamp from "../LiveTimeStamp/LiveTimestamp";
-import Image from "next/image";
 
 type ArticlePageProps = {
   article: Article;
@@ -13,7 +12,7 @@ export default function Article({ article }: ArticlePageProps) {
     hover:scale-105 hover:shadow-xl hover:bg-slate-200 transition-all duration-200 ease-out"
     >
       {article.image && (
-        <Image
+        <img
           className="h-56 w-full object-cover rounded-t-lg shadow-md"
           src={article.image}
           alt={article.title}

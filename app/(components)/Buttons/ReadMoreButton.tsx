@@ -1,5 +1,4 @@
 "use client";
-import React, { ReactNode } from "react";
 import { useRouter } from "next/navigation";
 
 type ReadMoreButtonProps = {

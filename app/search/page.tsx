@@ -1,6 +1,5 @@
-import React, { ReactNode } from "react";
 import fetchNews from "../../core/services/newsService";
-import NewsList from "../../components/News/NewsList";
+import NewsList from "../(components)/News/NewsList";
 
 type SearchProps = {
   searchParams?: { term: string };

@@ -1,4 +1,4 @@
-import NewsList from "../../../components/News/NewsList";
+import NewsList from "../../(components)/News/NewsList";
 import fetchNews from "../../../core/services/newsService";
 import { categories } from "../../../core/constants/constants";
 

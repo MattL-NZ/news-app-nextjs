@@ -41,7 +41,6 @@ export default async function fetchNews(
     }
   `;
   // Fetch function with Next.JS 13 caching...
-  console.log("HELLO");
   const res = await fetch(
     "https://nianzishan.stepzen.net/api/jittery-robin/__graphql",
     {
