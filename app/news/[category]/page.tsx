@@ -19,6 +19,6 @@ export default async function NewsCategoryPage({
   );
 }
 
-export async function gererateStaticParams() {
-  return categories.map((category) => ({ category: { category } }));
+export async function generateStaticParams() {
+  return categories.map((category) => ({ category: category }));
 }

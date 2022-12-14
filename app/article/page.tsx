@@ -1,9 +1,8 @@
 import { notFound } from "next/navigation";
 import LiveTimestamp from "../(components)/LiveTimeStamp/LiveTimestamp";
-import React from "react";
 
 type ArticlePageProps = {
-  searchParams: Article;
+  searchParams?: Article;
 };
 export default function ArticlePage({ searchParams }: ArticlePageProps) {
   if (
